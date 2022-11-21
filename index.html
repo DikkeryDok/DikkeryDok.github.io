@@ -12,8 +12,9 @@
 <body>
     <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
-            <img id="energy" src="./9PrD.gif" />
             <a-asset-item id="plane" src="./lagg-5_3rd_gviap_baltic_fleet.glb"></a-asset-item>
+            <img id="energy" src="./9PrD.gif" />
+            <img id="fura" src="./img.png" />
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -23,6 +24,9 @@
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 1">
             <a-plane src="#energy" position="0 0 0" height="5.29" width="6.00" rotation="0 0 0"></a-plane>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 2">
+            <a-plane src="#fura" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
         </a-entity>
     </a-scene>
 </body>
