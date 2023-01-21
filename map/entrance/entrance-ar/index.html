@@ -5,6 +5,13 @@
     <script src="/js/mindar-image.prod.js"></script>
     <script src="/js/aframe.min.js"></script>
     <script src="/js/mindar-image-aframe.prod.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+                    perepis.addEventListener("click", event => {
+                                window.location.href = "http://gpw.su";
+                            }
+
+    </script>
 </head>
 
 <body>
@@ -24,7 +31,7 @@
             <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
         </a-entity>
         <a-entity mindar-image-target="targetIndex: 4">
-            <a-plane id="perepis" class="clickable" href="http://gpw.su" color="red" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+            <a-plane id="perepis" class="clickable" color="red" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
         </a-entity>
     </a-scene>
 </body>
