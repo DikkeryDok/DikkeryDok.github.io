@@ -7,9 +7,13 @@
     <script src="/js/mindar-image-aframe.prod.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-                    perepis.addEventListener("click", event => {
-                                window.location.href = "http://gpw.su";
-                            }
+            const sceneEl = document.querySelector('a-scene');
+            const arSystem = sceneEl.systems["mindar-image-system"];
+            // detect click event
+            perepis.addEventListener("click", event => {
+                window.location.href="http://gpw.su";
+            });
+        });
 
     </script>
 </head>
